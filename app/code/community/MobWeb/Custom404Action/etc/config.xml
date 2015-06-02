@@ -19,15 +19,15 @@
     </global>
     <frontend>
         <events>
-            <controller_action_postdispatch_cms_index_noRoute>
+            <controller_action_predispatch_cms_index_noRoute>
                 <observers>
                     <custom404action>
                         <type>singleton</type>
                         <class>custom404action/observer</class>
-                        <method>ControllerActionPostdispatchCmsIndexNoRoute</method>
+                        <method>ControllerActionPredispatchCmsIndexNoRoute</method>
                     </custom404action>
                 </observers>
-            </controller_action_postdispatch_cms_index_noRoute>
+            </controller_action_predispatch_cms_index_noRoute>
         </events>
     </frontend>
  </config>

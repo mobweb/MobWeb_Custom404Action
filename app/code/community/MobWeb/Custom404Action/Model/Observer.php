@@ -2,7 +2,7 @@
 
 class MobWeb_Custom404Action_Model_Observer
 {
-	public function ControllerActionPostdispatchCmsIndexNoRoute($observer)
+	public function ControllerActionPredispatchCmsIndexNoRoute($observer)
 	{
 		// Implement your custom action here
 	}
