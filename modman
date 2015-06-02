@@ -1,0 +1,6 @@
+app/code/community/MobWeb/Custom404Action app/code/community/MobWeb/Custom404Action/
+
+app/etc/modules/MobWeb_Custom404Action.xml app/etc/modules/MobWeb_Custom404Action.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"

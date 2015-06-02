@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MobWeb_Custom404Action>
+            <version>0.1.0</version>
+        </MobWeb_Custom404Action>
+    </modules>
+    <global>
+        <models>
+            <custom404action>
+                <class>MobWeb_Custom404Action_Model</class>
+            </custom404action>
+        </models>
+        <helpers>
+            <custom404action>
+                <class>MobWeb_Custom404Action_Helper</class>
+            </custom404action>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_postdispatch_cms_index_noRoute>
+                <observers>
+                    <custom404action>
+                        <type>singleton</type>
+                        <class>custom404action/observer</class>
+                        <method>ControllerActionPostdispatchCmsIndexNoRoute</method>
+                    </custom404action>
+                </observers>
+            </controller_action_postdispatch_cms_index_noRoute>
+        </events>
+    </frontend>
+ </config>
